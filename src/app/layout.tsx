@@ -1,8 +1,14 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Ubuntu_Mono as UbuntuMono } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
+// new font
+const ubuntuMono = UbuntuMono({
+  subsets: ['latin'],
+  variable: '--font-ubuntu',
+  weight: '400',
+})
 
 export const metadata: Metadata = {
   title: 'My AskSQL',
@@ -16,8 +22,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    // Obs: add className to <html>
+    <html lang="en" className={`${inter.variable} ${ubuntuMono.variable}`}>
+      <body className="bg-bluebarry">{children}</body>
     </html>
   )
 }
