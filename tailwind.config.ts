@@ -50,7 +50,11 @@ const config: Config = {
           800: '#8b426c',
           900: '#6a3252',
         },
-        bluebarry: '#07061d',
+        bluebarry: {
+          300: '#323842',
+          600: '#151a2a',
+          900: '#07061d',
+        },
         background: '#030712',
         pistachio: '#d3ffcc',
         cream: '#e2dfcd',

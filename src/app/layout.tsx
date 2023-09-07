@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     // Obs: add className to <html>
     <html lang="en" className={`${inter.variable} ${ubuntuMono.variable}`}>
-      <body className="bg-bluebarry">{children}</body>
+      <body className="bg-bluebarry-900">{children}</body>
     </html>
   )
 }
