@@ -13,10 +13,10 @@ export default function Home() {
       </header>
       <form className="py-8 w-full flex flex-col text-foam">
         <label className="text-lg font-light" htmlFor="schema">
-          Cole aqui o seus SQL
+          Cole aqui o seu SQL
         </label>
         <textarea
-          className="my-4 bg-bluebarry-600 border border-bluebarry-300 rounded-md px-4 py-3 outline-none focus: ring-2 focus: ring-lemon-600"
+          className="my-4 bg-bluebarry-600 border border-bluebarry-300 rounded-md px-4 py-3 outline-none focus: ring-1 focus: ring-lemon-600"
           id="schema"
           name="schema"
         />
@@ -25,7 +25,7 @@ export default function Home() {
           Faça uma pergunta sobre o codigo
         </label>
         <textarea
-          className="my-4 bg-bluebarry-600 border border-bluebarry-300 rounded-md px-4 py-3 outline-none focus: ring-2 focus: ring-lemon-600"
+          className="my-4 bg-bluebarry-600 border border-bluebarry-300 rounded-md px-4 py-3 outline-none focus: ring-1 focus: ring-lemon-600"
           id="question"
           name="question"
         />
@@ -38,9 +38,12 @@ export default function Home() {
           Perguntar a Inteligencia Artificial
         </button>
       </form>
-      <div>
-        <span>Resposta:</span>
-        <textarea />
+      <div className="mt-6">
+        <span className="text-lg font-light text-foam">Resposta:</span>
+        <textarea
+          readOnly
+          className="my-4 border bg-transparent border-bluebarry-300 rounded-md px-4 py-3 outline-none focus: ring-1 focus: ring-lemon-600"
+        />
       </div>
     </div>
   )
