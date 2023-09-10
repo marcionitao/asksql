@@ -7,6 +7,8 @@ AskSQL is a simple APP for ask SQL queries.
 - TypeScript
 - NextJS
 - TailwindCSS
-- PostCSS
 - ESLint
-- Prettier
+- Prisma
+- react-simple-code-editor
+- Vercel IA SDK
+- OpenAI
