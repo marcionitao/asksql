@@ -1,6 +1,6 @@
 # AskSQL
 
-AskSQL is a simple APP for ask SQL queries.
+AskSQL is an AI application that answers questions about SQL queries.
 
 ## Technologies
 
